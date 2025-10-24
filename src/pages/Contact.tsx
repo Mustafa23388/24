@@ -41,61 +41,61 @@ export default function Contact() {
 
   return (
     <div>
-      <section className="pt-32 pb-20 md:pt-40 md:pb-32 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-slate-50 via-blue-50 to-slate-100">
+      <section className="pt-32 pb-20 md:pt-40 md:pb-32 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto text-center">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 mb-6 md:mb-8 animate-fade-in">
-            Get In <span className="bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">Touch</span>
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 md:mb-8 animate-fade-in">
+            Get In <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">Touch</span>
           </h1>
-          <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed animate-slide-up">
+          <p className="text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed animate-slide-up">
             Ready to start your next project? We'd love to hear from you. Send us a message and we'll respond as soon as possible.
           </p>
         </div>
       </section>
 
-      <section className="py-20 md:py-32 px-4 sm:px-6 lg:px-8 bg-white">
+      <section className="py-20 md:py-32 px-4 sm:px-6 lg:px-8 bg-gray-800/50">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12">
             <div className="space-y-8 animate-fade-in">
               <div>
-                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+                <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
                   Let's Build Something Great Together
                 </h2>
-                <p className="text-lg text-gray-600 leading-relaxed">
+                <p className="text-lg text-gray-300 leading-relaxed">
                   Whether you have a project in mind or just want to explore possibilities, our team is here to help. Fill out the form and we'll get back to you within 24 hours.
                 </p>
               </div>
 
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-blue-600 rounded-xl flex items-center justify-center text-white flex-shrink-0">
+                  <div className="w-12 h-12 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-xl flex items-center justify-center text-white flex-shrink-0">
                     <Mail className="w-6 h-6" />
                   </div>
                   <div>
-                    <h3 className="font-bold text-gray-900 mb-1">Email Us</h3>
-                    <p className="text-gray-600">contact@magmarenterprises.com</p>
-                    <p className="text-gray-600">support@magmarenterprises.com</p>
+                    <h3 className="font-bold text-white mb-1">Email Us</h3>
+                    <p className="text-gray-300">contact@magmarenterprises.com</p>
+                    <p className="text-gray-300">support@magmarenterprises.com</p>
                   </div>
                 </div>
 
                 <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-blue-600 rounded-xl flex items-center justify-center text-white flex-shrink-0">
+                  <div className="w-12 h-12 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-xl flex items-center justify-center text-white flex-shrink-0">
                     <Phone className="w-6 h-6" />
                   </div>
                   <div>
-                    <h3 className="font-bold text-gray-900 mb-1">Call Us</h3>
-                    <p className="text-gray-600">+92 300 1234567</p>
-                    <p className="text-gray-600">Mon-Fri 9am-6pm PKT</p>
+                    <h3 className="font-bold text-white mb-1">Call Us</h3>
+                    <p className="text-gray-300">+92 300 1234567</p>
+                    <p className="text-gray-300">Mon-Fri 9am-6pm PKT</p>
                   </div>
                 </div>
 
                 <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-blue-600 rounded-xl flex items-center justify-center text-white flex-shrink-0">
+                  <div className="w-12 h-12 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-xl flex items-center justify-center text-white flex-shrink-0">
                     <MapPin className="w-6 h-6" />
                   </div>
                   <div>
-                    <h3 className="font-bold text-gray-900 mb-1">Visit Us</h3>
-                    <p className="text-gray-600">Blue Area, F-7 Markaz</p>
-                    <p className="text-gray-600">Islamabad, Pakistan</p>
+                    <h3 className="font-bold text-white mb-1">Visit Us</h3>
+                    <p className="text-gray-300">Blue Area, F-7 Markaz</p>
+                    <p className="text-gray-300">Islamabad, Pakistan</p>
                   </div>
                 </div>
               </div>
@@ -110,11 +110,11 @@ export default function Contact() {
             </div>
 
             <div className="animate-fade-in-delayed">
-              <form onSubmit={handleSubmit} className="bg-gradient-to-br from-slate-50 to-blue-50 rounded-2xl p-6 md:p-8 shadow-xl border border-gray-100">
+              <form onSubmit={handleSubmit} className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-6 md:p-8 shadow-xl border border-gray-700">
                 <div className="space-y-6">
                   <div className="grid sm:grid-cols-2 gap-6">
                     <div>
-                      <label htmlFor="name" className="block text-sm font-semibold text-gray-900 mb-2">
+                      <label htmlFor="name" className="block text-sm font-semibold text-white mb-2">
                         Full Name *
                       </label>
                       <input
@@ -124,13 +124,13 @@ export default function Contact() {
                         required
                         value={formData.name}
                         onChange={handleChange}
-                        className="w-full px-4 py-3 bg-white border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none transition-all"
+                        className="w-full px-4 py-3 bg-gray-700 border border-gray-600 text-white rounded-xl focus:ring-2 focus:ring-cyan-500 focus:border-transparent outline-none transition-all"
                         placeholder="John Doe"
                       />
                     </div>
 
                     <div>
-                      <label htmlFor="email" className="block text-sm font-semibold text-gray-900 mb-2">
+                      <label htmlFor="email" className="block text-sm font-semibold text-white mb-2">
                         Email Address *
                       </label>
                       <input
@@ -140,7 +140,7 @@ export default function Contact() {
                         required
                         value={formData.email}
                         onChange={handleChange}
-                        className="w-full px-4 py-3 bg-white border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none transition-all"
+                        className="w-full px-4 py-3 bg-gray-700 border border-gray-600 text-white rounded-xl focus:ring-2 focus:ring-cyan-500 focus:border-transparent outline-none transition-all"
                         placeholder="john@example.com"
                       />
                     </div>
@@ -148,7 +148,7 @@ export default function Contact() {
 
                   <div className="grid sm:grid-cols-2 gap-6">
                     <div>
-                      <label htmlFor="phone" className="block text-sm font-semibold text-gray-900 mb-2">
+                      <label htmlFor="phone" className="block text-sm font-semibold text-white mb-2">
                         Phone Number
                       </label>
                       <input
@@ -157,13 +157,13 @@ export default function Contact() {
                         name="phone"
                         value={formData.phone}
                         onChange={handleChange}
-                        className="w-full px-4 py-3 bg-white border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none transition-all"
+                        className="w-full px-4 py-3 bg-gray-700 border border-gray-600 text-white rounded-xl focus:ring-2 focus:ring-cyan-500 focus:border-transparent outline-none transition-all"
                         placeholder="+92 300 1234567"
                       />
                     </div>
 
                     <div>
-                      <label htmlFor="company" className="block text-sm font-semibold text-gray-900 mb-2">
+                      <label htmlFor="company" className="block text-sm font-semibold text-white mb-2">
                         Company Name
                       </label>
                       <input
@@ -172,14 +172,14 @@ export default function Contact() {
                         name="company"
                         value={formData.company}
                         onChange={handleChange}
-                        className="w-full px-4 py-3 bg-white border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none transition-all"
+                        className="w-full px-4 py-3 bg-gray-700 border border-gray-600 text-white rounded-xl focus:ring-2 focus:ring-cyan-500 focus:border-transparent outline-none transition-all"
                         placeholder="Your Company"
                       />
                     </div>
                   </div>
 
                   <div>
-                    <label htmlFor="service" className="block text-sm font-semibold text-gray-900 mb-2">
+                    <label htmlFor="service" className="block text-sm font-semibold text-white mb-2">
                       Service Interested In *
                     </label>
                     <select
@@ -204,7 +204,7 @@ export default function Contact() {
                   </div>
 
                   <div>
-                    <label htmlFor="message" className="block text-sm font-semibold text-gray-900 mb-2">
+                    <label htmlFor="message" className="block text-sm font-semibold text-white mb-2">
                       Project Details *
                     </label>
                     <textarea
@@ -221,13 +221,13 @@ export default function Contact() {
 
                   <button
                     type="submit"
-                    className="w-full group px-8 py-4 bg-blue-600 text-white rounded-xl hover:bg-blue-700 transform hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-xl font-bold flex items-center justify-center space-x-2"
+                    className="w-full group px-8 py-4 bg-gradient-to-r from-cyan-500 to-blue-600 text-white rounded-xl hover:from-cyan-600 hover:to-blue-700 transform hover:scale-105 transition-all duration-200 shadow-lg shadow-cyan-500/20 hover:shadow-xl hover:shadow-cyan-500/30 font-bold flex items-center justify-center space-x-2"
                   >
                     <span>Send Message</span>
                     <Send className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                   </button>
 
-                  <p className="text-sm text-gray-600 text-center">
+                  <p className="text-sm text-gray-400 text-center">
                     We'll respond within 24 hours during business days
                   </p>
                 </div>
@@ -262,7 +262,7 @@ export default function Contact() {
 
               <button
                 onClick={closeModal}
-                className="w-full px-6 py-3 bg-blue-600 text-white rounded-full hover:bg-blue-700 transform hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-xl font-bold"
+                className="w-full px-6 py-3 bg-gradient-to-r from-cyan-500 to-blue-600 text-white rounded-full hover:from-cyan-600 hover:to-blue-700 transform hover:scale-105 transition-all duration-200 shadow-lg shadow-cyan-500/20 hover:shadow-xl hover:shadow-cyan-500/30 font-bold"
               >
                 Close
               </button>

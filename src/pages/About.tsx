@@ -50,27 +50,27 @@ export default function About() {
 
   return (
     <div>
-      <section className="pt-32 pb-20 md:pt-40 md:pb-32 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-slate-50 via-blue-50 to-slate-100">
+      <section className="pt-32 pb-20 md:pt-40 md:pb-32 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6 md:space-y-8 animate-slide-up">
-              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 leading-tight">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight">
                 About
-                <span className="block bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">
+                <span className="block bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
                   Magmar Enterprises
                 </span>
               </h1>
-              <p className="text-lg sm:text-xl text-gray-600 leading-relaxed">
+              <p className="text-lg sm:text-xl text-gray-300 leading-relaxed">
                 Since our founding, we've been on a mission to transform businesses through innovative technology solutions. With a team of experienced professionals and a passion for excellence, we deliver results that exceed expectations.
               </p>
-              <p className="text-lg text-gray-600 leading-relaxed">
+              <p className="text-lg text-gray-300 leading-relaxed">
                 From startups to enterprise organizations, we've helped hundreds of clients achieve their digital transformation goals.
               </p>
             </div>
 
             <div className="relative animate-fade-in-delayed">
-              <div className="absolute -inset-4 bg-gradient-to-r from-blue-400 to-cyan-400 rounded-3xl blur-2xl opacity-30 animate-pulse-slow"></div>
-              <div className="relative bg-white rounded-3xl p-8 shadow-2xl">
+              <div className="absolute -inset-4 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-3xl blur-2xl opacity-20 animate-pulse-slow"></div>
+              <div className="relative bg-gray-800 rounded-3xl p-8 shadow-2xl border border-gray-700">
                 <img
                   src="https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=800"
                   alt="Team collaboration"
@@ -82,10 +82,10 @@ export default function About() {
         </div>
       </section>
 
-      <section className="py-20 md:py-32 px-4 sm:px-6 lg:px-8 bg-white">
+      <section className="py-20 md:py-32 px-4 sm:px-6 lg:px-8 bg-gray-800/50">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16 md:mb-20">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4 md:mb-6">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 md:mb-6">
               Our Core Values
             </h2>
             <p className="text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto">
@@ -97,16 +97,16 @@ export default function About() {
             {values.map((value, index) => (
               <div
                 key={index}
-                className="bg-gradient-to-br from-slate-50 to-blue-50 rounded-2xl p-6 md:p-8 border border-gray-100 animate-scale-in hover:shadow-xl transition-shadow duration-300"
+                className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-6 md:p-8 border border-gray-700 animate-scale-in hover:border-cyan-500/50 hover:shadow-xl hover:shadow-cyan-500/20 transition-all duration-300"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
-                <div className="w-14 h-14 md:w-16 md:h-16 bg-blue-600 rounded-2xl flex items-center justify-center text-white mb-4 md:mb-6 shadow-lg">
+                <div className="w-14 h-14 md:w-16 md:h-16 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-2xl flex items-center justify-center text-white mb-4 md:mb-6 shadow-lg shadow-cyan-500/20">
                   {value.icon}
                 </div>
-                <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-3">
+                <h3 className="text-xl md:text-2xl font-bold text-white mb-3">
                   {value.title}
                 </h3>
-                <p className="text-gray-600 leading-relaxed">
+                <p className="text-gray-300 leading-relaxed">
                   {value.description}
                 </p>
               </div>
@@ -115,7 +115,7 @@ export default function About() {
         </div>
       </section>
 
-      <section className="py-20 md:py-32 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-slate-50 to-blue-50">
+      <section className="py-20 md:py-32 px-4 sm:px-6 lg:px-8 bg-gray-900/50">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16 md:mb-20">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4 md:mb-6">
@@ -141,15 +141,15 @@ export default function About() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-gray-900/60 to-transparent"></div>
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-1">{member.name}</h3>
-                <p className="text-blue-600 font-medium">{member.role}</p>
+                <h3 className="text-xl font-bold text-white mb-1">{member.name}</h3>
+                <p className="text-cyan-400 font-medium">{member.role}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="py-20 md:py-32 px-4 sm:px-6 lg:px-8 bg-white">
+      <section className="py-20 md:py-32 px-4 sm:px-6 lg:px-8 bg-gray-800/50">
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-3 gap-8">
             {[
@@ -162,26 +162,26 @@ export default function About() {
                 className="text-center p-8 bg-gradient-to-br from-slate-50 to-blue-50 rounded-2xl border border-gray-100 animate-scale-in"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
-                <div className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent mb-2">
+                <div className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent mb-2">
                   {stat.number}
                 </div>
-                <div className="text-gray-600 font-medium text-lg">{stat.label}</div>
+                <div className="text-gray-300 font-medium text-lg">{stat.label}</div>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="py-20 md:py-32 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-blue-600 to-cyan-600">
+      <section className="py-20 md:py-32 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-cyan-600 to-blue-700">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-6">
             Join Our Journey
           </h2>
-          <p className="text-lg sm:text-xl text-blue-100 mb-8 leading-relaxed">
+          <p className="text-lg sm:text-xl text-cyan-100 mb-8 leading-relaxed">
             Let's work together to create something amazing
           </p>
           <Link to="/contact">
-            <button className="px-8 py-4 bg-white text-blue-600 rounded-full hover:bg-gray-50 transform hover:scale-105 transition-all duration-200 shadow-2xl hover:shadow-3xl font-bold">
+            <button className="px-8 py-4 bg-white text-cyan-600 rounded-full hover:bg-gray-100 transform hover:scale-105 transition-all duration-200 shadow-2xl hover:shadow-3xl font-bold">
               Get Started Today
             </button>
           </Link>

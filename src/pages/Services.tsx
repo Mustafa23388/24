@@ -63,18 +63,18 @@ export default function Services() {
 
   return (
     <div>
-      <section className="pt-32 pb-20 md:pt-40 md:pb-32 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-slate-50 via-blue-50 to-slate-100">
+      <section className="pt-32 pb-20 md:pt-40 md:pb-32 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto text-center">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 mb-6 md:mb-8 animate-fade-in">
-            Our <span className="bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">Services</span>
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 md:mb-8 animate-fade-in">
+            Our <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">Services</span>
           </h1>
-          <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed animate-slide-up">
+          <p className="text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed animate-slide-up">
             Comprehensive technology solutions tailored to your business needs. From concept to deployment, we deliver excellence at every stage.
           </p>
         </div>
       </section>
 
-      <section className="py-20 md:py-32 px-4 sm:px-6 lg:px-8 bg-white">
+      <section className="py-20 md:py-32 px-4 sm:px-6 lg:px-8 bg-gray-800/50">
         <div className="max-w-7xl mx-auto">
           <div className="grid gap-12 md:gap-16">
             {services.map((service, index) => (
@@ -97,25 +97,25 @@ export default function Services() {
                 </div>
 
                 <div className="space-y-6">
-                  <div className="w-16 h-16 bg-blue-600 rounded-2xl flex items-center justify-center text-white shadow-lg">
+                  <div className="w-16 h-16 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-2xl flex items-center justify-center text-white shadow-lg shadow-cyan-500/20">
                     {service.icon}
                   </div>
-                  <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
+                  <h2 className="text-3xl md:text-4xl font-bold text-white">
                     {service.title}
                   </h2>
-                  <p className="text-lg text-gray-600 leading-relaxed">
+                  <p className="text-lg text-gray-300 leading-relaxed">
                     {service.description}
                   </p>
                   <ul className="space-y-3">
                     {service.features.map((feature, idx) => (
-                      <li key={idx} className="flex items-center text-gray-700">
-                        <div className="w-2 h-2 bg-blue-600 rounded-full mr-3"></div>
+                      <li key={idx} className="flex items-center text-gray-300">
+                        <div className="w-2 h-2 bg-cyan-400 rounded-full mr-3"></div>
                         {feature}
                       </li>
                     ))}
                   </ul>
                   <Link to="/contact">
-                    <button className="px-6 py-3 bg-blue-600 text-white rounded-full hover:bg-blue-700 transform hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-xl font-semibold">
+                    <button className="px-6 py-3 bg-gradient-to-r from-cyan-500 to-blue-600 text-white rounded-full hover:from-cyan-600 hover:to-blue-700 transform hover:scale-105 transition-all duration-200 shadow-lg shadow-cyan-500/20 hover:shadow-xl hover:shadow-cyan-500/30 font-semibold">
                       Learn More
                     </button>
                   </Link>
@@ -126,16 +126,16 @@ export default function Services() {
         </div>
       </section>
 
-      <section className="py-20 md:py-32 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-slate-50 to-blue-50">
+      <section className="py-20 md:py-32 px-4 sm:px-6 lg:px-8 bg-gray-900/50">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-6">
             Don't See What You Need?
           </h2>
-          <p className="text-lg sm:text-xl text-gray-600 mb-8 leading-relaxed">
+          <p className="text-lg sm:text-xl text-gray-300 mb-8 leading-relaxed">
             We offer custom solutions tailored to your unique requirements. Let's discuss your project.
           </p>
           <Link to="/contact">
-            <button className="px-8 py-4 bg-blue-600 text-white rounded-full hover:bg-blue-700 transform hover:scale-105 transition-all duration-200 shadow-xl hover:shadow-2xl font-bold">
+            <button className="px-8 py-4 bg-gradient-to-r from-cyan-500 to-blue-600 text-white rounded-full hover:from-cyan-600 hover:to-blue-700 transform hover:scale-105 transition-all duration-200 shadow-xl shadow-cyan-500/20 hover:shadow-2xl hover:shadow-cyan-500/30 font-bold">
               Contact Us
             </button>
           </Link>
